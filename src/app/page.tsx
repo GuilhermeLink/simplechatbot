@@ -1,8 +1,9 @@
-import { Chat } from "@/components/Chat";
+import { Chat } from "@/components/chat";
+import img from "@/lib/background.jpg"
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen bg-slate-50 items-center justify-center">
+    <div className="flex min-h-screen items-center justify-center bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${img})` }}>
       <Chat />
     </div>
   )
